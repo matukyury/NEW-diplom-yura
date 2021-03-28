@@ -1,0 +1,300 @@
+extends layout/layout
+
+block vars
+    - var pageTitle = 'Главная страница'
+    - var pageBodyClass = 'homepage'
+    - var pageHeaderClass = ''
+
+block content
+    .header 
+        .container 
+            .header__top 
+                a.logo__img-wrap(href="#")
+                    img.logo__img(src="../assets/imgs/logo.svg")
+                nav.nav 
+                    ul.nav__list 
+                        li.nav__item
+                            a.nav__link(href="#") Home
+                        li.nav__item
+                            a.nav__link(href="#") Product
+                        li.nav__item
+                            a.nav__link(href="#") Pricing
+                        li.nav__item
+                            a.nav__link(href="#") About
+                        li.nav__item
+                            a.nav__link(href="#") Contact
+                form.email
+                    input.email__text(type="email" value="" placeholder="Your Email")
+                    button(type="submit").btn Subsribe
+                .burger     
+                    .burger__line
+                    .burger__line
+                    .burger__line
+            .main
+                .main__inner 
+                    p.main__top At your fingertips
+                    p.main__title Lightning fast prototyping 
+                    p.main__text Most calendars are designed for teams. Slate is designed for freelancers
+                    .main__btn
+                        button(type="submit").btn.btn--2 Try For Free
+            .main__img-wrap
+                img.main__img(src="../assets/imgs/Macbook.svg")
+    .second
+        .container 
+            .second__inner 
+                .features 
+                    p.features__subtitle At your fingertips
+                    h2.features__title Features
+                    p.features__text Most calendars are designed for teams. Slate is designed for freelancers
+                .browser
+                    .browser__inner 
+                        .browser__img-wrap
+                            img.browser__img(src="../assets/imgs/browser.png")
+                        .browser__blocks 
+                            .block
+                                .block__inner
+                                    .block__title 
+                                        .block__img-wrap
+                                            img.block__img(src="../assets/imgs/icon__menu.svg")
+                                        p.block__heading At your fingertips
+                                    p.block__text Slate helps you see how many more days you need to work to reach your financial goal. 
+                            .block
+                                .block__inner
+                                    .block__title 
+                                        .block__img-wrap
+                                            img.block__img(src="../assets/imgs/icon__menu.svg")
+                                        p.block__heading At your fingertips
+                                    p.block__text Slate helps you see how many more days you need to work to reach your financial goal. 
+        .subscription
+            .subscription__inner 
+                p.subscription__subtitle At your fingertips
+                h2.subscription__title Lightning fast prototyping 
+                p.subscription__text Most calendars are designed for teams. Slate is designed for freelancers
+            .subscription__buttons 
+                button(type="submit").btn Buy now
+                button(type="submit").btn.btn--3 Try For Free
+    .mail
+        .container 
+            .mail__inner 
+                .mail__img-wrap
+                    img.mail__img(src="../assets/imgs/mail.svg")
+                .mail__content 
+                    p.mail__subtitle At your fingertips
+                    h2.mail__title Lightning fast prototyping 
+                    p.mail__lead Subscribe to our Newsletter
+                    p.mail__text Available exclusivery on Figmaland
+                    form.mail__btns 
+                        input.email__text(type="email" value="" placeholder="Your Email")
+                        button(type="submit").btn.btn--4 Subscribe
+    .partners 
+        .container
+            .partners__inner 
+                h2.partners__title Partners
+                p.partners__text Most calendars are designed for teams. Slate is designed for freelancers
+                .prtners__logos
+                    .partners__logo
+                        a.partners__img-wrap(href="#")
+                            img.partners__img(src="../assets/imgs/1_partner.svg")
+                        a.partners__img-wrap(href="#")
+                            img.partners__img(src="../assets/imgs/2_partner.svg")
+                        a.partners__img-wrap(href="#")
+                            img.partners__img(src="../assets/imgs/3_partner.svg")
+                        a.partners__img-wrap(href="#")
+                            img.partners__img(src="../assets/imgs/4_partner.svg")
+                        a.partners__img-wrap(href="#")
+                            img.partners__img(src="../assets/imgs/5_partner.svg")
+                        a.partners__img-wrap(href="#")
+                            img.partners__img(src="../assets/imgs/6_partner.svg")
+                        a.partners__img-wrap(href="#")
+                            img.partners__img(src="../assets/imgs/7_partner.svg")
+                .partners__btn 
+                    button(type="submit").btn.btn--2.btn--4 Try For Free
+    .testimonials
+        .container 
+            .testimonials__inner 
+                h2.testimonials__title Testimonials
+                .wrapper
+                            .testimonials__card 
+                                .testimonials__img-wrap 
+                                    img.testimonials__img(src="../assets/imgs/1_avatar-new.jpg")
+                                p.testimonials__text Slate helps you see how many more days you need to work to reach your financial goal for the month and year.
+                                .testimonials__stars
+                                    img.testimonials__star(src="../assets/imgs/star_full.svg")
+                                    img.testimonials__star(src="../assets/imgs/star_full.svg")
+                                    img.testimonials__star(src="../assets/imgs/star_full.svg")
+                                    img.testimonials__star(src="../assets/imgs/star_full.svg")
+                                    img.testimonials__star(src="../assets/imgs/star_empty.svg")
+                                p.testimonials__name Regina Miles
+                                p.testimonials__position Designer
+                            .testimonials__card 
+                                .testimonials__img-wrap 
+                                    img.testimonials__img(src="../assets/imgs/2_avatar.png")
+                                p.testimonials__text Slate helps you see how many more days you need to work to reach your financial goal for the month and year.
+                                .testimonials__stars
+                                    img.testimonials__star(src="../assets/imgs/star_full.svg")
+                                    img.testimonials__star(src="../assets/imgs/star_full.svg")
+                                    img.testimonials__star(src="../assets/imgs/star_full.svg")
+                                    img.testimonials__star(src="../assets/imgs/star_full.svg")
+                                    img.testimonials__star(src="../assets/imgs/star_empty.svg")                                
+                                p.testimonials__name Regina Miles
+                                p.testimonials__position Designer
+                            .testimonials__card 
+                                .testimonials__img-wrap 
+                                    img.testimonials__img(src="../assets/imgs/3_avatar.png")
+                                p.testimonials__text Slate helps you see how many more days you need to work to reach your financial goal for the month and year.
+                                .testimonials__stars
+                                    img.testimonials__star(src="../assets/imgs/star_full.svg")
+                                    img.testimonials__star(src="../assets/imgs/star_full.svg")
+                                    img.testimonials__star(src="../assets/imgs/star_full.svg")
+                                    img.testimonials__star(src="../assets/imgs/star_full.svg")
+                                    img.testimonials__star(src="../assets/imgs/star_empty.svg")                                
+                                p.testimonials__name Regina Miles
+                                p.testimonials__position Designer                                
+                            .testimonials__card 
+                                .testimonials__img-wrap 
+                                    img.testimonials__img(src="../assets/imgs/4_avatar.png")
+                                p.testimonials__text Slate helps you see how many more days you need to work to reach your financial goal for the month and year.
+                                .testimonials__stars
+                                    img.testimonials__star(src="../assets/imgs/star_full.svg")
+                                    img.testimonials__star(src="../assets/imgs/star_full.svg")
+                                    img.testimonials__star(src="../assets/imgs/star_full.svg")
+                                    img.testimonials__star(src="../assets/imgs/star_full.svg")
+                                    img.testimonials__star(src="../assets/imgs/star_empty.svg")                                
+                                p.testimonials__name Regina Miles
+                                p.testimonials__position Designer
+                            .testimonials__card 
+                                .testimonials__img-wrap 
+                                    img.testimonials__img(src="../assets/imgs/5_avatar.png")
+                                p.testimonials__text Slate helps you see how many more days you need to work to reach your financial goal for the month and year.
+                                .testimonials__stars
+                                    img.testimonials__star(src="../assets/imgs/star_full.svg")
+                                    img.testimonials__star(src="../assets/imgs/star_full.svg")
+                                    img.testimonials__star(src="../assets/imgs/star_full.svg")
+                                    img.testimonials__star(src="../assets/imgs/star_full.svg")
+                                    img.testimonials__star(src="../assets/imgs/star_empty.svg")                                
+                                p.testimonials__name Regina Miles
+                                p.testimonials__position Designer    
+                            .testimonials__card 
+                                .testimonials__img-wrap 
+                                    img.testimonials__img(src="../assets/imgs/6_avatar.png")
+                                p.testimonials__text Slate helps you see how many more days you need to work to reach your financial goal for the month and year.
+                                .testimonials__stars
+                                    img.testimonials__star(src="../assets/imgs/star_full.svg")
+                                    img.testimonials__star(src="../assets/imgs/star_full.svg")
+                                    img.testimonials__star(src="../assets/imgs/star_full.svg")
+                                    img.testimonials__star(src="../assets/imgs/star_full.svg")
+                                    img.testimonials__star(src="../assets/imgs/star_empty.svg")                                
+                                p.testimonials__name Regina Miles
+                                p.testimonials__position Designer
+                .testimonials__btn 
+                    button(type="submit").btn.btn--2.btn--4 More Testimonials  
+    .pricing 
+        .container
+            .pricing__inner 
+                .pricing__content 
+                    p.pricing__title Pricing
+                    p.pricing__text Slate helps you see how many more days you need to work to reach your financial goal for the month and year.
+                .pricing__coast 
+                    p.pricing__trial 30 - day free trial.
+                    .pricing__month
+                        p.pricing__dollars $10
+                        p.pricing__period / Month per User
+                    p.pricing__calendars Most calendars are designed for teams. 
+                    .pricing__btn 
+                        button(type="submit").btn.btn--4 Get started
+    .contact 
+        .container
+            .contact__inner
+                h2.contact__title Contact Us
+                p.contact__text Most calendars are designed for teams. Slate is designed for freelancers
+                .contact__logos
+                    a.contact__img-wrap(href="https://twitter.com/")
+                        img.contact__img(src="../assets/imgs/twit.svg")
+                    a.contact__img-wrap(href="https://www.facebook.com/")
+                        img.contact__img(src="../assets/imgs/face.svg")
+                    a.contact__img-wrap(href="https://www.linkedin.com/")
+                        img.contact__img(src="../assets/imgs/link.svg")
+                .map__img-wrap 
+                    img.map__img(src="../assets/imgs/map.jpg")
+    .info
+        .info__inner        
+            .info__place 
+                img.info__img(src="../assets/imgs/nav.svg")
+                p.info__adress 6386 Spring St undefined Anchorage, <br> Georgia 12473 United States
+            .info__phone 
+                img.info__img(src="../assets/imgs/phone.svg")
+                a(href="(843) 555-0130").info__number (843) 555-0130
+            .info__email 
+                img.info__img(src="../assets/imgs/mail_logo.svg")
+                a(href="willie.jennings@example.com").info__mail willie.jennings@example.com
+    .contactus
+        .contactus__inner 
+            p.contactus__title Contact Us
+            .contactus__contents
+                .contactus__content
+                input.contactus__name(type="text" value="" placeholder="Your Name")
+                .contactus__content
+                input.contactus__mail(type="email" value="" placeholder="Your Email")
+                .contactus__content
+                textarea.contactus__message(type="textarea" value="" placeholder="Your Message")
+            .contactus__btn 
+                button(type="submit").btn.btn--4 Get started
+    .footer 
+        .footer__inner
+            .pages
+                .pages__inner 
+                    p.pages__title Pages
+                        ul.pages__list 
+                            li.pages__item
+                                a.pages__link(href="#") Home
+                            li.pages__item
+                                a.pages__link(href="#") Product
+                            li.pages__item
+                                a.pages__link(href="#") Pricing
+                            li.pages__item
+                                a.pages__link(href="#") About
+                            li.pages__item
+                                a.pages__link(href="#") Contact
+            .tomothy
+                .tomothy__inner
+                    p.tomothy__title Tomothy 
+                        ul.tomothy__list 
+                            li.tomothy__item
+                                a.tomothy__link(href="#") Eleanor Edwards
+                            li.tomothy__item
+                                a.tomothy__link(href="#") Ted Robertson
+                            li.tomothy__item
+                                a.tomothy__link(href="#") Annette Russell
+                            li.tomothy__item
+                                a.tomothy__link(href="#") Jennie Mckinney
+                            li.tomothy__item
+                                a.tomothy__link(href="#") Gloria Richards
+            .jane
+                .jane__inner 
+                    p.jane__title Jane Black 
+                        ul.jane__list 
+                            li.jane__item
+                                a.jane__link(href="#") Philip Jones
+                            li.jane__item
+                                a.jane__link(href="#") Product
+                            li.jane__item
+                                a.jane__link(href="#") Colleen Russell
+                            li.jane__item
+                                a.jane__link(href="#") Marvin Hawkins
+                            li.jane__item
+                                a.jane__link(href="#") Bruce Simmmons
+            .mailing
+                .mailing__inner 
+                    .mailing__logos
+                        a.mailing__img-wrap(href="https://twitter.com/")
+                            img.mailing__img(src="../assets/imgs/twit_white.svg")
+                        a.mailing__img-wrap(href="https://www.facebook.com/")
+                            img.mailing__img(src="../assets/imgs/face_white.svg")
+                        a.mailing__link(href="https://www.linkedin.com/")
+                            img.mailing__img(src="../assets/imgs/link_white.svg")
+                    .mailing__content 
+                        p.mailing__title Subscribe to our Newsletter
+                        p.mailing__text Available exclusivery on Figmaland
+                    form.mailing__btns
+                        input.mailing__mail(type="email" value="" placeholder="Your Email")
+                        button(type="submit").btn.btn--5 Subsribe                
